@@ -26,18 +26,34 @@ body{
 .head-input-sub{
     position: absolute;
     border-radius: 25px;
-    right: 4px;
+    /* right: 4px; */
     line-height: .8;
+    top: 13%;
+    left: 74%;
 }
-.web-site-name{
+.navbar-brand .web-site-name{
+    text-transform: capitalize !important;
+    font-size: 2rem;
+    color:#894aa3;
     
+}  
+.navbar-brand .web-site-name:hover{
     
-}
-.navbar .navbar-brand .web-site-name::first-letter{
+    color:rebeccapurple;
+    
+}  
+/* .navbar-brand .web-site-name::first-letter{
+    text-transform: capitalize;
+    color:blue;
+
+    
+} */
+/* .navbar .navbar-brand .web-site-name::first-letter{
     font-size: 2rem;
     color:rebeccapurple !important;
+    text-transform:capitalize;
     
-}
+} */
 .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link  {
     /* color: rgba(0, 0, 0, 0.9); */
     color:#666666 !important;
@@ -57,6 +73,8 @@ body{
 .blockquote{
     text-align:center;
     padding:1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .content-silder{
@@ -87,13 +105,15 @@ body{
 }
 .all-article{
     background: #FFF;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .article{
     margin-left: 25%;
 }
 .part1{
     position: relative;
-    padding:2rem 0;
+    padding:1rem 0;
    
 }
 .img-article{
@@ -104,7 +124,9 @@ body{
 
     color:#894aa3;
 }
-
+.article-text{
+    padding-right: 0.7rem;
+}
 .all-card{
     padding:2.5rem 0;
 }
@@ -190,3 +212,43 @@ body{
     float: right;
     
 }
+
+
+
+@media (min-width: 576px) {
+    .head-input-sub {
+      
+        left: 75%;
+    }
+
+
+
+  }
+  
+  @media (min-width: 768px) {
+    .img-article{
+        
+        left: 0%;
+    }
+    .article-title{
+    font-size: 1.1rem;
+    }
+   
+  }
+  
+  @media (min-width: 992px) {
+    .img-article{
+        
+        left: 7%;
+    }
+   
+  }
+  
+  @media (min-width: 1200px) {
+    .blockquote {
+        
+        padding: 3rem 7rem;
+    }
+  
+   
+  }
